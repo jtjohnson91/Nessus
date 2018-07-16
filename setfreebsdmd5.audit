@@ -1,0 +1,108 @@
+<check_type:"Unix">
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for 6.1.15 Audit Installed Packages"
+cmd			:	"pkg query -a %n > /home/nessus/pkg.bl"
+expect		:	""
+</custom_item>
+
+#<custom_item>		
+#system		: "FreeBSD"	
+#type		: CMD_EXEC
+#description	: "Create Baseline File for /boot md5"
+#cmd			:	"find -s /boot -type f -exec md5 {} \\; > /home/nessus/boot.bl"
+#expect		:	""
+#</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /lib md5"
+cmd			:	"find -s /lib -type f -exec md5 {} \\; > /home/nessus/lib.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /lib64 md5"
+cmd			:	"find -s /lib64 -type f -exec md5 {} \\; > /home/nessus/lib64.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /sys md5"
+cmd			:	"find -s /sys -type f -exec md5 {} \\; > /home/nessus/sys.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /bin md5"
+cmd			:	"find -s /bin -type f -exec md5 {} \\; > /home/nessus/bin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /sbin md5"
+cmd			:	"find -s /sbin -type f -exec md5 {} \\; > /home/nessus/sbin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /usr/bin md5"
+cmd			:	"find -s /usr/bin -type f -exec md5 {} \\; > /home/nessus/usrbin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /usr/sbin md5"
+cmd			:	"find -s /usr/sbin -type f -exec md5 {} \\; > /home/nessus/usrsbin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /usr/local/bin md5"
+cmd			:	"find -s /usr/local/bin -type f -exec md5 {} \\; > /home/nessus/usrlocalbin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /usr/local/etc md5"
+cmd			:	"find -s /usr/local/etc -type f -exec md5 {} \\; > /home/nessus/usrlocaletc.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /usr/local/sbin md5"
+cmd			:	"find -s /usr/local/sbin -type f -exec md5 {} \\; > /home/nessus/usrlocalsbin.bl"
+expect		:	""
+</custom_item>
+
+<custom_item>		
+system		: "FreeBSD"	
+type		: CMD_EXEC
+description	: "Create Baseline File for /etc md5"
+cmd			:	"find -s /etc -type f -exec md5 {} \\; > /home/nessus/etc.bl"
+expect		:	""
+</custom_item>
+
+
+</check_type>
