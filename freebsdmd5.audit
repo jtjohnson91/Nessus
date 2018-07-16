@@ -4,7 +4,7 @@
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for 6.1.15 Audit Installed Packages"
-cmd			:	"pkg query -a %n > /home/nessus/pkg.new && diff /home/nessus/pkg.bl /home/nessus/pkg.new && rm /home/nessus/pkg.new"
+cmd			:	"pkg query -a %n > /home/nessus/pkg.new; diff /home/nessus/pkg.bl /home/nessus/pkg.new; rm /home/nessus/pkg.new"
 expect		:	""
 </custom_item>
 
@@ -12,7 +12,7 @@ expect		:	""
 #system		: "FreeBSD"	
 #type		: CMD_EXEC
 #description	: "Create Baseline File for /boot md5"
-#cmd			:	"find -s /boot -type f -exec md5 {} \\; > /home/nessus/boot.new && diff /home/nessus/boot.bl /home/nessus/boot.new && rm /home/nessus/boot.new"
+#cmd			:	"find -s /boot -type f -exec md5 {} \\; > /home/nessus/boot.new; diff /home/nessus/boot.bl /home/nessus/boot.new; rm /home/nessus/boot.new"
 #expect		:	""
 #</custom_item>
 
@@ -20,7 +20,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /lib md5"
-cmd			:	"find -s /lib -type f -exec md5 {} \\; > /home/nessus/lib.new && diff /home/nessus/lib.bl /home/nessus/lib.new && rm /home/nessus/lib.new"
+cmd			:	"find -s /lib -type f -exec md5 {} \\; > /home/nessus/lib.new; diff /home/nessus/lib.bl /home/nessus/lib.new; rm /home/nessus/lib.new"
 expect		:	""
 </custom_item>
 
@@ -28,7 +28,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /lib64 md5"
-cmd			:	"find -s /lib64 -type f -exec md5 {} \\; > /home/nessus/lib64.new && diff /home/nessus/lib64.bl /home/nessus/lib64.new && rm /home/nessus/lib64.new"
+cmd			:	"find -s /lib64 -type f -exec md5 {} \\; > /home/nessus/lib64.new; diff /home/nessus/lib64.bl /home/nessus/lib64.new; rm /home/nessus/lib64.new"
 expect		:	""
 </custom_item>
 
@@ -36,7 +36,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /sys md5"
-cmd			:	"find -s /sys -type f -exec md5 {} \\; > /home/nessus/sys.new && diff /home/nessus/sys.bl /home/nessus/sys.new && rm /home/nessus/sys.new"
+cmd			:	"find -s /sys -type f -exec md5 {} \\; > /home/nessus/sys.new; diff /home/nessus/sys.bl /home/nessus/sys.new; rm /home/nessus/sys.new"
 expect		:	""
 </custom_item>
 
@@ -44,7 +44,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /bin md5"
-cmd			:	"find -s /bin -type f -exec md5 {} \\; > /home/nessus/bin.new && diff /home/nessus/bin.bl /home/nessus/bin.new && rm /home/nessus/bin.new"
+cmd			:	"find -s /bin -type f -exec md5 {} \\; > /home/nessus/bin.new; diff /home/nessus/bin.bl /home/nessus/bin.new; rm /home/nessus/bin.new"
 expect		:	""
 </custom_item>
 
@@ -52,7 +52,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /sbin md5"
-cmd			:	"find -s /sbin -type f -exec md5 {} \\; > /home/nessus/sbin.new && diff /home/nessus/sbin.bl /home/nessus/sbin.new && rm /home/nessus/sbin.new"
+cmd			:	"find -s /sbin -type f -exec md5 {} \\; > /home/nessus/sbin.new; diff /home/nessus/sbin.bl /home/nessus/sbin.new; rm /home/nessus/sbin.new"
 expect		:	""
 </custom_item>
 
@@ -60,7 +60,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /usr/bin md5"
-cmd			:	"find -s /usr/bin -type f -exec md5 {} \\; > /home/nessus/usrbin.new && diff /home/nessus/usrbin.bl /home/nessus/usrbin.new && rm /home/nessus/usrbin.new"
+cmd			:	"find -s /usr/bin -type f -exec md5 {} \\; > /home/nessus/usrbin.new; diff /home/nessus/usrbin.bl /home/nessus/usrbin.new; rm /home/nessus/usrbin.new"
 expect		:	""
 </custom_item>
 
@@ -68,7 +68,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /usr/sbin md5"
-cmd			:	"find -s /usr/sbin -type f -exec md5 {} \\; > /home/nessus/usrsbin.new && diff /home/nessus/usrsbin.bl /home/nessus/usrsbin.new && rm /home/nessus/usrsbin.new"
+cmd			:	"find -s /usr/sbin -type f -exec md5 {} \\; > /home/nessus/usrsbin.new; diff /home/nessus/usrsbin.bl /home/nessus/usrsbin.new; rm /home/nessus/usrsbin.new"
 expect		:	""
 </custom_item>
 
@@ -76,7 +76,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /usr/local/bin md5"
-cmd			:	"find -s /usr/local/bin -type f -exec md5 {} \\; > /home/nessus/usrlocalbin.new && diff /home/nessus/usrlocalbin.bl /home/nessus/usrlocalbin.new && rm /home/nessus/usrlocalbin.new"
+cmd			:	"find -s /usr/local/bin -type f -exec md5 {} \\; > /home/nessus/usrlocalbin.new; diff /home/nessus/usrlocalbin.bl /home/nessus/usrlocalbin.new; rm /home/nessus/usrlocalbin.new"
 expect		:	""
 </custom_item>
 
@@ -84,7 +84,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /usr/local/etc md5"
-cmd			:	"find -s /usr/local/etc -type f -exec md5 {} \\; > /home/nessus/usrlocaletc.new && diff /home/nessus/usrlocaletc.bl /home/nessus/usrlocaletc.new && rm /home/nessus/usrlocaletc.new"
+cmd			:	"find -s /usr/local/etc -type f -exec md5 {} \\; > /home/nessus/usrlocaletc.new; diff /home/nessus/usrlocaletc.bl /home/nessus/usrlocaletc.new; rm /home/nessus/usrlocaletc.new"
 expect		:	""
 </custom_item>
 
@@ -92,7 +92,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /usr/local/sbin md5"
-cmd			:	"find -s /usr/local/sbin -type f -exec md5 {} \\; > /home/nessus/usrlocalsbin.new && diff /home/nessus/usrlocalsbin.bl /home/nessus/usrlocalsbin.new && rm /home/nessus/usrlocalsbin.new"
+cmd			:	"find -s /usr/local/sbin -type f -exec md5 {} \\; > /home/nessus/usrlocalsbin.new; diff /home/nessus/usrlocalsbin.bl /home/nessus/usrlocalsbin.new; rm /home/nessus/usrlocalsbin.new"
 expect		:	""
 </custom_item>
 
@@ -100,7 +100,7 @@ expect		:	""
 system		: "FreeBSD"	
 type		: CMD_EXEC
 description	: "Create Baseline File for /etc md5"
-cmd			:	"find -s /etc -type f -exec md5 {} \\; > /home/nessus/etc.bl && diff /home/nessus/etc.new /home/nessus/etc.new && rm /home/nessus/etc.new"
+cmd			:	"find -s /etc -type f -exec md5 {} \\; > /home/nessus/etc.new; diff /home/nessus/etc.bl /home/nessus/etc.new; rm /home/nessus/etc.new"
 expect		:	""
 </custom_item>
 
