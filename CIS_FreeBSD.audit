@@ -49,30 +49,30 @@
 	cmd			:"mount"
 	expect		: "zroot\/home\s*on\s\/home\s"
 </custom_item>  
-  
-<if>
-<condition type:"and">
-  <custom_item>
-   system		: "FreeBSD"
-   type			: CMD_EXEC
-   description	: "1.1.20 Ensure sticky bit is set on all world-writable directories "
-   cmd			: "sudo find / -type d -perm -1777 > /tmp/1777.tmp && sudo find / -type d -perm -0777 > /tmp/0777.tmp && diff /tmp/1777.tmp /tmp/0777.tmp | rm /tmp/*.tmp"
-   expect		: ".*"
-  </custom_item>
-</condition>
-<then>
-  <report type:"FAILED">
-   description: "1.1.20 Ensure sticky bit is set on all world-writable directories "
-  </report>
-</then>
-<else>
-  <report type:"PASSED">
-   description: "1.1.20 Ensure sticky bit is set on all world-writable directories "
-  </report>
-</else>
-</if>
 
 #####NEEDS SUDO####
+#<if>
+#<condition type:"and">
+#  <custom_item>
+#   system		: "FreeBSD"
+#   type			: CMD_EXEC
+#   description	: "1.1.20 Ensure sticky bit is set on all world-writable directories "
+#   cmd			: "sudo find / -type d -perm -1777 > /tmp/1777.tmp && sudo find / -type d -perm -0777 > /tmp/0777.tmp && diff /tmp/1777.tmp /tmp/0777.tmp | rm /tmp/*.tmp"
+#   expect		: ".*"
+#  </custom_item>
+#</condition>
+#<then>
+#  <report type:"FAILED">
+#   description: "1.1.20 Ensure sticky bit is set on all world-writable directories "
+#  </report>
+#</then>
+#<else>
+#  <report type:"PASSED">
+#   description: "1.1.20 Ensure sticky bit is set on all world-writable directories "
+#  </report>
+#</else>
+#</if>
+#
 #<custom_item>
 #    system  : "FreeBSD"
 #    type    : CMD_EXEC
